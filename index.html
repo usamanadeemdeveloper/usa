@@ -1168,14 +1168,9 @@
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
+              <form id="myForm" class="php-email-form" action="http://localhost:3000/submit-form" method="post">
                 <div class="row">
-                  <div class="form-group col-md-6">
+                  <!-- <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
                     <input
                       type="text"
@@ -1184,8 +1179,8 @@
                       id="name"
                       required
                     />
-                  </div>
-                  <div class="form-group col-md-6">
+                  </div> -->
+                  <div class="form-group col-md-12">
                     <label for="name">Your Email</label>
                     <input
                       type="email"
@@ -1216,20 +1211,14 @@
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
+                  <div class="loading" id="load">Loading</div>
+                  <!-- <div class="error-message" id="err"></div> -->
+                  <div class="sent-message" id="success">
                     Your message has been sent. Thank you!
                   </div>
                 </div>
                 <div class="text-center">
-                  <button
-                    type="button"
-                    title="Disabled for now can't deploy Back-End cuz using free hosting"
-                    disabled
-                  >
-                    Send Message
-                  </button>
+                  <button type="submit">Send Message</button>
                 </div>
               </form>
             </div>
@@ -1273,5 +1262,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/submit.js"></script>
+    <script src="assets/js/node.js"></script>
   </body>
 </html>
