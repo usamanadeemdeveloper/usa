@@ -1168,58 +1168,31 @@
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form id="myForm" class="php-email-form" action="http://localhost:3000/submit-form" method="post">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="row">
-                  <!-- <div class="form-group col-md-6">
+                  <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      required
-                    />
-                  </div> -->
-                  <div class="form-group col-md-12">
+                    <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
                     <label for="name">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      required
-                    />
+                    <input type="email" class="form-control" name="email" id="email" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    required
-                  />
+                  <input type="text" class="form-control" name="subject" id="subject" required>
                 </div>
                 <div class="form-group">
                   <label for="name">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="10"
-                    required
-                  ></textarea>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading" id="load">Loading</div>
-                  <!-- <div class="error-message" id="err"></div> -->
-                  <div class="sent-message" id="success">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
             </div>
           </div>
@@ -1251,18 +1224,16 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/submit.js"></script>
-    <script src="assets/js/node.js"></script>
   </body>
 </html>
