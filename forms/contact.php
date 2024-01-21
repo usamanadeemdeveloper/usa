@@ -8,10 +8,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $receiving_email_address = 'usamanadeemparacha@gmail.com';
 
     // Form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
+    $subject = isset($_POST['subject']) ? htmlspecialchars($_POST['subject']) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
     // Validate form data (add more validation if needed)
     if (empty($name) || empty($email) || empty($subject) || empty($message)) {
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'OK';
     } else {
         http_response_code(500);
-        echo 'Error sending email.';
+        echo 'Error sending email. Please try again later.';
     }
 } else {
     // Handle other HTTP methods (GET, PUT, DELETE, etc.) if needed

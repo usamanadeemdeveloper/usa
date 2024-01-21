@@ -91,32 +91,32 @@
 //   })();
   
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('.php-email-form');
+    const form = document.querySelector('.php-email-form');
 
-  form.addEventListener('submit', function (event) {
-      event.preventDefault();
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.querySelector('textarea[name="message"]').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.querySelector('textarea[name="message"]').value;
 
-      // Basic validation - add more as needed
-      if (!name || !email || !subject || !message) {
-          displayError('Please fill in all fields.');
-          return;
-      }
+        // Basic validation - add more as needed
+        if (!name || !email || !subject || !message) {
+            displayError('Please fill in all fields.');
+            return;
+        }
 
-      // If you need additional client-side validation, you can add it here
+        // If you need additional client-side validation, you can add it here
 
-      // If all validation passes, submit the form
-      // You may choose to submit the form here or proceed with further actions
-      form.submit();
-  });
+        // If all validation passes, submit the form
+        // You may choose to submit the form here or proceed with further actions
+        form.submit();
+    });
 
-  function displayError(errorMessage) {
-      const errorContainer = document.querySelector('.error-message');
-      errorContainer.textContent = errorMessage;
-      errorContainer.classList.add('d-block');
-  }
+    function displayError(errorMessage) {
+        const errorContainer = document.querySelector('.error-message');
+        errorContainer.textContent = errorMessage;
+        errorContainer.classList.add('d-block');
+    }
 });
