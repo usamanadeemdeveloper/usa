@@ -1120,7 +1120,7 @@ h3 {
   .emailSize {
     font-size: small!important;
   }
-  .contact .info p{
+  .contact .info .emailSize{
     padding-left: 49px!important;
   }
 }
