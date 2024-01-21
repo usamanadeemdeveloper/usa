@@ -1115,3 +1115,12 @@ h3 {
     padding-right: 20px 15px;
   }
 }
+
+@media (max-width: 767px) {
+  .emailSize {
+    font-size: small!important;
+  }
+  .contact .info p{
+    padding-left: 49px!important;
+  }
+}
